@@ -1,6 +1,5 @@
 package com.supportportal.service.ipml;
 
-import com.supportportal.constant.UserImplConstant;
 import com.supportportal.domain.User;
 import com.supportportal.domain.UserPrincipal;
 import com.supportportal.repository.UserRepository;
