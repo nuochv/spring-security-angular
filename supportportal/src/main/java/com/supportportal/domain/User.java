@@ -19,14 +19,15 @@ public class User implements Serializable {
     private String profileImageUrl;
     private Date lastLoginDate;
     private Date lastLoginDateDisplay;
-    private String[] roles; //Role_User{read, edit}, ROle_admin {delete}
+    private Date joinDate;
+    private String role; //Role_User{read, edit}, Role_admin {delete}
     private String[] authorities;
     private Boolean isActive;
     private Boolean isNotLocked;
 
     public User() {}
 
-    public User(Long id, String userId, String firstName, String lastName, String username, String password, String email, String profileImageUrl, Date lastLoginDate, Date lastLoginDateDisplay, String[] roles, String[] authorities, Boolean isActive, Boolean isNotLocked) {
+    public User(Long id, String userId, String firstName, String lastName, String username, String password, String email, String profileImageUrl, Date lastLoginDate, Date lastLoginDateDisplay,Date joinDate, String role, String[] authorities, Boolean isActive, Boolean isNotLocked) {
         this.id = id;
         this.userId = userId;
         this.firstName = firstName;
@@ -37,7 +38,8 @@ public class User implements Serializable {
         this.profileImageUrl = profileImageUrl;
         this.lastLoginDate = lastLoginDate;
         this.lastLoginDateDisplay = lastLoginDateDisplay;
-        this.roles = roles;
+        this.joinDate = joinDate;
+        this.role = role;
         this.authorities = authorities;
         this.isActive = isActive;
         this.isNotLocked = isNotLocked;
@@ -119,16 +121,24 @@ public class User implements Serializable {
         return lastLoginDateDisplay;
     }
 
+    public Date getJoinDate() {
+        return joinDate;
+    }
+
+    public void setJoinDate(Date joinDate) {
+        this.joinDate = joinDate;
+    }
+
     public void setLastLoginDateDisplay(Date lastLoginDateDisplay) {
         this.lastLoginDateDisplay = lastLoginDateDisplay;
     }
 
-    public String[] getRoles() {
-        return roles;
+    public String getRole() {
+        return role;
     }
 
-    public void setRoles(String[] roles) {
-        this.roles = roles;
+    public void setRole(String roles) {
+        this.role = role;
     }
 
     public String[] getAuthorities() {
