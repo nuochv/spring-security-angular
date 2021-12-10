@@ -1,2 +1,31 @@
-# spring-security-angular 8787
-Khóa Học JSON Web Token (JWT) Với Spring Security Và Angular [Khóa 8787 A]
+# Khóa Học JSON Web Token (JWT) Với Spring Security Và Angular [Khóa 8787 A]
+- 01 Giới thiệu.
+- 02 Tổng quan về Web Application.
+- 03 Application Domain.
+- 04 Security.
+- 05 Custom Exception Handling.
+- 06 User Registration.
+- 07 Generate JWT.
+- 08 Brute Force Attack.
+- 09 Email Notification.
+- 10 User Service.
+- 11 User Resource.
+- 12 API Test.
+- 13 Front End.
+- 14 Authentication service.
+- 15 User service.
+- 16 Interceptor.
+- 17 Guard.
+- 18 Notification.
+- 19 HTML Template.
+- 20 Login Page.
+- 21 Register Page.
+- 22 User Page - Display User Info.
+- 23 User Page - Add a New User.
+- 24 User Page - Edit User.
+- 25 User Page - Delete User.
+- 26 User Page - Reset Password.
+- 27 User Page - Profile.
+- 28 Cải tiến.
+- 29 Security Management - Front End.
+- 30 Deployment.
